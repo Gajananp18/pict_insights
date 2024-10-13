@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navContainer {
+  width: 75%;
+  margin: auto;
+  height: 48px;
+  display: flex;
+  padding: 8px 0;
+  text-align: center;
+  font-family: sans-serif;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.navLeftSide {
+  flex: 4;
+  display: flex;
+  margin-right: 10%;
+}
+.navMiddleSide {
+  flex: 5.5;
+  display: flex;
+  justify-content: space-around;
+}
+.navRightSide {
+  flex: 2;
+}
+
+.logo > img {
+  width: 90%;
+  height: 90%;
+}
+.inputField {
+  width: 90%;
+  height: 90%;
+  border: none;
+  padding: 0 5px;
+  font-size: 16px;
+  margin-left: 5px;
+  line-height: 28px;
+  position: relative;
+  color: #000000e6;
+  border-radius: 5px;
+  background-color: #eef3f8;
+}
+
+.fa-icon {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5b5b5be6;
+}
+.link {
+  width: 100%;
+  cursor: pointer;
+  color: #787878;
+  position: relative;
+  text-decoration: none;
+}
+.link::after {
+  left: 6%;
+  bottom: 0;
+  width: 90%;
+  content: "";
+  height: 1.5px;
+  position: absolute;
+  transition: 0.4s ease;
+  transform: scale(0, 1);
+  transform-origin: 0 100%;
+  background-color: #000;
+}
+.link:hover:after {
+  transform: scale(1, 1);
+}
+
+.text {
+  margin: 1px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.text:hover {
+  color: black;
+}
+.avatar {
+  width: 25px;
+  height: 20px;
+  display: block;
+  margin-left: 30%;
+  border-radius: 50%;
+}
+.fa-icon:hover {
+  color: black;
+}
+.avatar-text {
+  margin-top: 0;
+  display: flex;
+}
+
+@media (max-width: 415px) {
+  /* nav {
+  
+  } */
+  .navContainer {
+    width: 95%;
+  }
+  .inputField{
+    display: none;
+  }
+  .navLeftSide{
+    margin-right: 0;
+    flex: 2;
+  }
+  .navRightSide{
+    display: none;
+  }
+  .navAvatarDiv{
+    display: none;
+  }
+  .navMiddleSide{
+    flex: 10;
+    margin: 0;
+  }
+  .fa-icon{
+    position: absolute;
+    top: 25%;    
+  }
+  .text{
+    display: none;
+  }
+
+}
